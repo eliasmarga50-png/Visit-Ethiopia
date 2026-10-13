@@ -16,4 +16,13 @@ body {
 }
 
 
+/* ---Top Bar Styles*/
+.top-bar {
+    background-color: #0b0b0b;
+    color: #b0b0b0;
+    font-size: 13px;
+    padding: 8px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 
