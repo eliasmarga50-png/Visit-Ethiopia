@@ -15,7 +15,7 @@
         <div class="top-bar-container">
             <div class="top-bar-left">
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <span class="divider">|</span>
@@ -23,7 +23,7 @@
             </div>
             <div class="top-bar-right">
                 <div class="phone-info">
-                    <i class="fa fa-phone-alt"></i>+251 (0) 11 668 4572
+                    <i class="fa fa-phone-alt"></i> +251 (0) 11 668 4572
                 </div>
                 <div class="currency-dropdown">
                     USD <i class="fa fa-chevron-down"></i>
@@ -35,10 +35,10 @@
         </div>
     </div>
 
-    <!--Main Navigation Header-->
+    <!-- Main Navigation Header -->
     <header class="main-header">
         <div class="header-container">
-            <!--Logo-->
+            <!-- Logo -->
             <div class="logo">
                 <div class="logo-icon">🌳</div>
                 <div class="logo-text">
@@ -47,11 +47,11 @@
                 </div>
             </div>
 
-            <!--Navigation Links-->
+            <!-- Navigation Links -->
             <nav class="nav-links">
-                <a href="#">Home</a>
+                <a href="#" class="active">HOME</a>
                 <a href="#">DESTINATIONS</a>
-                <a href="#">PLAN YOUR TRIP<i class="fa fa-chevron-down dropdown-arrow"></i></a>
+                <a href="#">PLAN YOUR TRIP <i class="fa fa-chevron-down dropdown-arrow"></i></a>
                 <a href="#">EVENTS</a>
                 <a href="#">STOPOVER</a>
                 <a href="#">THINGS TO DO <i class="fa fa-chevron-down dropdown-arrow"></i></a>
@@ -59,31 +59,31 @@
                 <a href="#">MORE <i class="fa fa-chevron-down dropdown-arrow"></i></a>
             </nav>
 
-            <!--Mobile Menu Toggle-->
+            <!-- Mobile Menu Toggle Button -->
             <div class="mobile-toggle" id="mobileToggle">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!--Hero section with the background video-->
+    <!-- Hero Section with Background Video -->
     <section class="hero-section">
-        <!--Background video-->
+        <!-- Background Video -->
         <video autoplay muted loop playsinline class="hero-video">
             <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-mountains-and-clouds-41584-large.mp4" type="video/mp4">
-            your browser doesnot support HTML5 video
+            Your browser does not support HTML5 video.
         </video>
-
-        <!--Dark Gradient overlay-->
+        
+        <!-- Dark Gradient Overlay -->
         <div class="hero-overlay"></div>
 
-        <!--Hero text content-->
+        <!-- Hero Text Content -->
         <div class="hero-content">
-            <h2 class="hero-subtitle-text">Welcome to visit Ethiopia</h2>
-            <h1 class="hero-title-text">The land of origins</h1>
+            <h2 class="hero-subtitle-text">Welcome to Visit Ethiopia</h2>
+            <h1 class="hero-title-text">Land Of Origins</h1>
         </div>
 
-        <!--Bottom curved white wave shape overlay-->
+        <!-- Bottom Curved White Wave Shape Overlay -->
         <div class="wave-shape">
             <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <path fill="#ffffff" fill-opacity="1" d="M0,192L48,181.3C96,171,192,149,288,160C384,171,480,213,576,218.7C672,224,768,192,864,165.3C960,139,1056,117,1152,128C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -91,6 +91,21 @@
         </div>
     </section>
 
-    
+    <!-- Floating Chatbot Widget (Bottom Right) -->
+    <div class="chatbot-floating">
+        <div class="chatbot-icon-btn">
+            <i class="fa fa-robot"></i>
+        </div>
+    </div>
+
+    <script>
+        // Simple mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 </body>
 </html>
